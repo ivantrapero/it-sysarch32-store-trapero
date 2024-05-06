@@ -4,7 +4,7 @@ function Header() {
     <header>
       <div className="logo">
         <label className="text-black ms-5 raleway-font font-bold font-logo">
-          ComLab Shop
+          CompLab
         </label>
       </div>
       <div className="hamburger">
@@ -16,7 +16,7 @@ function Header() {
         <ul>
           <li>
             <Link className="me-lg-5 mt-sm-5 raleway-font" to="/">
-              Products
+              Items
             </Link>
           </li>
         </ul>

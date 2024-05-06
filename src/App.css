@@ -195,7 +195,7 @@ header ul li > * {
   gap: 10px;
   border: 1px solid black;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/shirts.jpg");
+    url("./assets/shirtss.jpg");
   background-size: cover;
   object-fit: cover;
   border-radius: 20px;
@@ -211,7 +211,7 @@ header ul li > * {
   gap: 10px;
   border: 1px solid black;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/monitor.jpg");
+    url("./assets/monitors.jpg");
   background-size: cover;
   object-fit: cover;
   border-radius: 20px;
@@ -227,7 +227,7 @@ header ul li > * {
   height: 225px;
   border: 1px solid black;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/iphone.jpg");
+    url("./assets/ram.jpg");
   background-size: cover;
   object-fit: cover;
   border-radius: 20px;
@@ -243,14 +243,14 @@ header ul li > * {
   height: 225px;
   border: 1px solid black;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/sales.png");
+    url("./assets/discount.jpg");
   background-size: cover;
   object-fit: cover;
   border-radius: 20px;
 }
 
 .main {
-  height: 90vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,7 +258,7 @@ header ul li > * {
   gap: 20px;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/Complab Logo.png");
+    url("./assets/ComplabLogo.png");
   background-size: cover;
   object-fit: cover;
   border-radius: 20px;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { db } from "../config/firebase-config";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { collection } from "firebase/firestore";
 import { getDocs } from "firebase/firestore";
 import Header from "../components/Header.jsx";
@@ -37,41 +37,41 @@ function Product() {
       <div className="wrapper mt-5">
         <div className="main">
           <label className="raleway-font font-bold font-big text-white">
-            This is ComLab Shop
+            Computer Laboratory Shop
           </label>
           <label className="raleway-font font-thin text-white">
-            Computer Laboratory
+            CompLab
           </label>
-          <button className="raleway-font font-small">Click Here...</button>
+          <button className="raleway-font font-small">See Repository</button>
         </div>
         <div className="side">
           <div className="child-1">
             <label className="raleway-font font-logo font-bold text-white">
-              Shirts
+              Gaming Shirts
             </label>
             <label className="raleway-font font-small text-white">
-              For Men and Women
+              For All Players and Gamers
             </label>
           </div>
           <div className="child-2">
             <label className="raleway-font font-logo font-bold text-white">
-              Accessories
+              Gadgets
             </label>
             <label className="raleway-font font-small text-white">
-              All Kinds of Gadgets
+              All Kinds of Electronic Devices
             </label>
           </div>
           <div className="child-3">
             <label className="raleway-font font-logo font-bold text-white">
-              Phones
+              Components
             </label>
             <label className="raleway-font font-small text-white">
-              Apple and Android Devices
+              Ram, CPU, more...
             </label>
           </div>
           <div className="child-4">
             <label className="raleway-font font-logo font-bold text-white">
-              Sales
+              Discounts
             </label>
             <label className="raleway-font font-small text-white">
               Available Everyday
