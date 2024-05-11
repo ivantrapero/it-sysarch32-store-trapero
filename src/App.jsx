@@ -1,11 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Loading from "./components/Loading.jsx";
 import Product from "./screens/Product.jsx";
 import ProductDetails from "./screens/ProductDetails";
@@ -14,7 +8,7 @@ import "./App.css";
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Set initial loading state to true
   const [getUser, setUser] = useState(null);
 
   useEffect(() => {
@@ -26,21 +20,13 @@ export default function App() {
         setIsLoggedIn(false);
         setUser(null);
       }
-      setIsLoading(false);
+      setIsLoading(false); // Set loading state to false after auth state is determined
     });
-    return () => unsubscribe;
-  });
-
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
-
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
+    return () => unsubscribe();
+  }, []); // Empty dependency array to run effect only once
 
   if (isLoading) {
-    <Loading />;
+    return <Loading />; // Return loading indicator
   }
 
   return (
